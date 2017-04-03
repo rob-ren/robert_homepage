@@ -1,3 +1,7 @@
 robert_app_homepage:
     path:     /
     defaults: { _controller: RobertAppBundle:Home:index }
+
+robert_send_message:
+    path:    /apply_message
+    defaults: { _controller: RobertAppBundle:Home:applyMessage }
