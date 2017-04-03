@@ -1,0 +1,3 @@
+robert_app_homepage:
+    path:     /
+    defaults: { _controller: RobertAppBundle:Home:index }

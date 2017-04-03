@@ -1,0 +1,3 @@
+robert_app:
+    resource: "@RobertAppBundle/Resources/config/routing.yml"
+    prefix:   /
