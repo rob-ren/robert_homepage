@@ -336,21 +336,24 @@
                 <div class="animate fadeInRight">
                     <div class="heading">
                         <h1>Contact Me</h1>
+                        <p>Please feel free to contact me and leave message! 🤗</p>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12 field">
                     <div class="animate bounceInLeft">
-                        <form role="form" action="{{ url('robert_send_message')}}" method="post">
+                        <div id="result" style="display: block">
+                        </div>
+                        <form id="contact-form" onsubmit="return false">
+                            {#role="form"  method="post" action="{{ url('robert_send_message')}}"#}
                             <div class="user">
-                                <input type="text" name="full_name" placeholder="Name"/>
+                                <input type="text" name="full_name" placeholder="Name" required/>
                                 <i class="fa fa-user" aria-hidden="true"></i></div>
                             <div class="user">
-                                <input type="text" name="email_address" placeholder="Email"/>
+                                <input type="text" name="email_address" placeholder="Email" required/>
                                 <i class="fa fa-envelope" aria-hidden="true"></i></div>
                             <textarea name="apply_message" placeholder="Message here"></textarea>
-                            <input type="submit" value="Submit Now"/>
+                            <input id="btn-submit" type="submit" value="Submit Now"/>
                         </form>
-                        {% if enquire_msg %} {{ enquire_msg }}{% endif %}
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-8 col-xs-12 contact_info">

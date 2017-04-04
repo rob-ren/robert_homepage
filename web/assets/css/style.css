@@ -564,6 +564,15 @@ img {
 	margin: 0 0 8px 0;
 	width: 84%;
 }
+.contact .field .user input[type="email"] {
+	color: #acaaaf;
+	background: #fff;
+	font-size: 13px;
+	float: left;
+	padding: 14px 3%;
+	margin: 0 0 8px 0;
+	width: 84%;
+}
 .contact .field textarea {
 	color: #acaaaf;
 	padding: 14px 3%;
