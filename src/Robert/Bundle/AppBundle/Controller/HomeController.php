@@ -6,7 +6,6 @@ use Robert\Bundle\AppBundle\Exceptions\EmailFormatErrorException;
 use Robert\Bundle\AppBundle\Exceptions\EmailMessageTooShortException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Response;
 
 class HomeController extends Controller
 {

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+{% trans_default_domain 'messages' %}
+<html lang="{{ app.request.locale|split('_')[0] }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Ren Xubo 😄</title>
+    <title>{% trans %}homepage.firstname{% endtrans %}{% trans %}homepage.lastname{% endtrans %} 😄</title>
     <link rel="icon" type="image/png"
           href="{{ asset('assets/images/favicon.ico') }}"/>
     <link rel="stylesheet" type="text/css"
@@ -33,13 +34,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12"><a href="#" class="navbar-brand pull-right"></a>
-                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"><a href="#" class="push_nav_brand">Ren
-                        Xubo</a>
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+                    <a href="#" class="push_nav_brand">
+                        {% trans %}homepage.firstname{% endtrans %}{% trans %}homepage.lastname{% endtrans %}
+                    </a>
                     <ul class="push_nav">
-                        <li><a class="active scroll" href="#home">Home</a></li>
-                        <li><a class="scroll" href="#aboutme">About Me</a></li>
-                        <li><a class="scroll" href="#mywork">My Work</a></li>
-                        <li><a class="scroll" href="#contactmesec">Contact ME</a></li>
+                        <li><a class="active scroll" href="#home">{% trans %}homepage.home{% endtrans %}</a></li>
+                        <li><a class="scroll" href="#aboutme">{% trans %}homepage.about_me{% endtrans %}</a></li>
+                        <li><a class="scroll" href="#mywork">{% trans %}homepage.my_life{% endtrans %}</a></li>
+                        <li><a class="scroll" href="#contactmesec">{% trans %}homepage.contact_me{% endtrans %}</a></li>
                     </ul>
                     <ul class="icons">
                         <li><a href="https://www.facebook.com/profile.php?id=100004002800303" target="_blank"
@@ -69,8 +72,8 @@
                     <div class="zoom"><img src="assets/images/robert.jpg" alt="alex">
                         <div class="zoom-overlay"></div>
                     </div>
-                    <h3>Ren Xubo</h3>
-                    <p>PHP Web Developer</p>
+                    <h3>{% trans %}homepage.firstname{% endtrans %} {% trans %}homepage.lastname{% endtrans %}</h3>
+                    <p>{% trans %}homepage.role{% endtrans %}</p>
                     <!-- Social Icons -->
                     <div class="icons">
                         <ul>
@@ -85,9 +88,10 @@
                 </div>
             </div>
         </div>
-        <div class="button"><a href="#contactmesec" data-target="contactmesec" class="btn active scroll">Contact Me</a>
-            <a
-                    href="#aboutme" data-target="aboutme" class="btn scroll">About Me</a></div>
+        <div class="button"><a href="#contactmesec" data-target="contactmesec" class="btn active scroll">{% trans %}
+                homepage.contact_me{% endtrans %}</a>
+            <a href="#aboutme" data-target="aboutme" class="btn scroll">{% trans %}homepage.about_me{% endtrans %}</a>
+        </div>
     </div>
 </div>
 
@@ -98,41 +102,34 @@
             <div class="col-xs-12 text-center">
                 <div class="animate fadeInRight">
                     <div class="heading">
-                        <h1>My Career Timeline</h1>
-                        <p>Talented young professional with sound skills and training in Web Development is seeking an
-                            opportunity to utilize qualifications as a Junior IT Web Developer.</p>
+                        <h1>{% trans %}homepage.my_career_time_line{% endtrans %}</h1>
+                        <p>{% trans %}homepage.career_content{% endtrans %}</p>
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
                     <div id="text-demo" class="owl-carousel">
                         <div class="item text-center">
-                            <h2>Web Design</h2>
-                            <em>Hitachi Information Systems,<span> 2011-2012</span></em>
-                            <p> Focused on Digi-Class system applied in Beijing Language and Culture University,
-                                completed the function upgrade of Digi-Class system</p>
+                            <h2>{% trans %}homepage.title.1{% endtrans %}</h2>
+                            <em>{% trans %}homepage.company.1{% endtrans %},<span> 2011-2012</span></em>
+                            <p>{% trans %}homepage.job_description.1{% endtrans %}</p>
                         </div>
                         <div class="item text-center">
-                            <h2>Master of Information Technology</h2>
-                            <em>Monash University,<span> 2013-2014</span></em>
-                            <p> Major in Internet and Web Application Development and Network Computing and Awarded the
-                                Faculty of IT International Merit Scholarship in 2013 and 2014</p>
+                            <h2>{% trans %}homepage.title.2{% endtrans %}</h2>
+                            <em>{% trans %}homepage.company.2{% endtrans %},<span> 2013-2014</span></em>
+                            <p>{% trans %}homepage.job_description.2{% endtrans %}</p>
                         </div>
                         <div class="item text-center">
-                            <h2>PHP Web Developer</h2>
-                            <em>IPX.net,<span> 2015-2017</span></em>
-                            <p> Develop a website from analysis and design stages, through coding, implementation and
-                                testing to evaluation</p>
+                            <h2>{% trans %}homepage.title.3{% endtrans %}</h2>
+                            <em>{% trans %}homepage.company.3{% endtrans %},<span> 2015-2017</span></em>
+                            <p>{% trans %}homepage.job_description.3{% endtrans %}</p>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-xs-12 skills text-center">
                     <div class="animate fadeInRight">
                         <div class="heading">
-                            <h1>About me</h1>
-                            <p>I'm a web developer with 2 years of professional experience. After I graduated from
-                                Monash University, I'm working in an entrepreneurial company, using PHP Symfony
-                                framework to establish the websites. </p>
+                            <h1>{% trans %}homepage.about_me{% endtrans %}</h1>
+                            <p>{% trans %}homepage.about_me_content{% endtrans %}</p>
                         </div>
                     </div>
                     <div class="animate bounceInUp">
@@ -140,23 +137,22 @@
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-service">
                                     <i class="fa fa-keyboard-o"></i>
-                                    <h2>Symfony Framework</h2>
-                                    <p>Using PHP Symfony framework to establish the websites from backend to
-                                        frontend</p>
+                                    <h2>{% trans %}homepage.skills_title.1{% endtrans %}</h2>
+                                    <p>{% trans %}homepage.skills_description.1{% endtrans %}</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-service">
                                     <i class="fa fa-code"></i>
-                                    <h2>HTML, CSS & JQuery</h2>
-                                    <p>Latest fronted technologies for faster and better responsive websites</p>
+                                    <h2>{% trans %}homepage.skills_title.2{% endtrans %}</h2>
+                                    <p>{% trans %}homepage.skills_description.2{% endtrans %}</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-service">
                                     <i class="fa fa-code-fork"></i>
-                                    <h2>Github</h2>
-                                    <p>Working cooperative with teammates by distributed version control tools</p>
+                                    <h2>{% trans %}homepage.skills_title.3{% endtrans %}</h2>
+                                    <p>{% trans %}homepage.skills_description.3{% endtrans %}</p>
                                 </div>
                             </div>
                         </div>
@@ -175,140 +171,159 @@
             <div class="col-xs-12 text-center">
                 <div class="animate fadeInRight">
                     <div class="head">
-                        <h1>My Life</h1>
+                        <h1>{% trans %}homepage.my_life{% endtrans %}</h1>
                     </div>
                 </div>
                 <div class="col-xs-12 work_filter text-center">
                     <div class="row">
                         <div class="animate fadeInLeft">
                             <ul class="breadcrumb">
-                                <li><a href="#." class="filter active" data-filter="all">All</a></li>
-                                <li><a href="#." class="filter" data-filter=".brand">Basketball</a></li>
-                                <li><a href="#." class="filter" data-filter=".design">Badminton</a></li>
-                                <li><a href="#." class="filter" data-filter=".photography">Photography</a></li>
-                                <li><a href="#." class="filter" data-filter=".web">Game</a></li>
+                                <li>
+                                    <a href="#." class="filter active" data-filter="all">
+                                        {% trans %}homepage.my_life_menu.all{% endtrans %}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="filter" data-filter=".basketball">
+                                        {% trans %}homepage.my_life_menu.basketball{% endtrans %}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="filter" data-filter=".badminton">
+                                        {% trans %}homepage.my_life_menu.badminton{% endtrans %}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="filter" data-filter=".photography">
+                                        {% trans %}homepage.my_life_menu.photography{% endtrans %}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="filter" data-filter=".game">
+                                        {% trans %}homepage.my_life_menu.game{% endtrans %}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="gallery">
                             <div class="row">
-                                <div class="mix web">
+                                <div class="mix basketball">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work1.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work1.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/houston_rockets.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/houston_rockets.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.basketball{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.basketball_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
-                                <div class="mix brand">
+                                <div class="mix basketball">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work2.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work2.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/basketball_playground.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/basketball_playground.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.basketball_playground{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.basketball_playground_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
-                                <div class="mix design">
+                                <div class="mix badminton">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work3.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work3.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/badminton.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/badminton.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.badminton{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.badminton_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
-                                <div class="mix web">
+                                <div class="mix badminton">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work4.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work4.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
-                                            </a></div>
-                                    </div>
-                                </div>
-                                <div class="mix brand">
-                                    <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work5.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work5.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
-                                            </a></div>
-                                    </div>
-                                </div>
-                                <div class="mix web">
-                                    <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work2.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work2.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/badminton_chenlong.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/badminton_chenlong.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.badminton_chenlong{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.badminton_chenlong_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
                                 <div class="mix photography">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work4.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work4.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/photography_guiyang.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/photography_guiyang.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}
+                                                    homepage.my_life_menu.photography_guiyang{% endtrans %} </h4>
+                                                <p>{% trans %}
+                                                    homepage.my_life_menu.photography_guiyang_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
                                 <div class="mix photography">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work5.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work5.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
-                                            </a></div>
-                                    </div>
-                                </div>
-                                <div class="mix design">
-                                    <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work1.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work1.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor.</p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/photography_lake_tyrrell.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/photography_lake_tyrrell.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}
+                                                    homepage.my_life_menu.photography_lake_tyrrell{% endtrans %} </h4>
+                                                <p>{% trans %}
+                                                    homepage.my_life_menu.photography_lake_tyrrell_desc{% endtrans %}</p>
                                             </a></div>
                                     </div>
                                 </div>
                                 <div class="mix photography">
                                     <div class="mix_sec">
-                                        <div class="imageContainer"><img class="sec" src="assets/images/work3.png"
-                                                                         alt="work"> <a class="overlayText fancybox"
-                                                                                        href="images/work3.png"
-                                                                                        data-fancybox-group="gallery">
-                                                <h4> Photo Chelenge </h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                                    commodo ligula eget dolor. </p>
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/yarra_ranges_national_park_min.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/yarra_ranges_national_park.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}
+                                                    homepage.my_life_menu.photography_national_park{% endtrans %} </h4>
+                                                <p>{% trans %}
+                                                    homepage.my_life_menu.photography_national_park_desc{% endtrans %}</p>
                                             </a></div>
+                                    </div>
+                                </div>
+                                <div class="mix game">
+                                    <div class="mix_sec">
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/game_pokemon_min.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/game_pokemon.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.game_pokemon{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.game_pokemon_desc{% endtrans %}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mix game">
+                                    <div class="mix_sec">
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/game_vampire.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/game_vampire.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.game_vampire{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.game_vampire_desc{% endtrans %}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mix game">
+                                    <div class="mix_sec">
+                                        <div class="imageContainer">
+                                            <img class="sec" src="assets/images/game_wow.jpg" alt="work">
+                                            <a class="overlayText fancybox" href="assets/images/game_wow.jpg"
+                                               data-fancybox-group="gallery">
+                                                <h4> {% trans %}homepage.my_life_menu.game_wow{% endtrans %} </h4>
+                                                <p>{% trans %}homepage.my_life_menu.game_wow_desc{% endtrans %}</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -317,9 +332,10 @@
                 </div>
                 <div class="col-xs-12 title text-center">
                     <div class="animate fadeInRight">
-                        <h1>Do you want to learn more about me?</h1>
-                        <div class="getin"><a class="scroll" href="#contactmesec" data-target="contactmesec">Get In
-                                Touch</a>
+                        <h1>{% trans %}homepage.want_to_learn_me{% endtrans %}</h1>
+                        <div class="getin">
+                            <a class="scroll" href="#contactmesec" data-target="contactmesec">{% trans %}
+                                homepage.get_in_touch{% endtrans %}</a>
                         </div>
                     </div>
                 </div>
@@ -335,8 +351,8 @@
             <div class="col-xs-12 text-center">
                 <div class="animate fadeInRight">
                     <div class="heading">
-                        <h1>Contact Me</h1>
-                        <p>Please feel free to contact me and leave message! 🤗</p>
+                        <h1>{% trans %}homepage.contact_me{% endtrans %}</h1>
+                        <p>{% trans %}homepage.contact.subline{% endtrans %} 🤗</p>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12 field">
@@ -344,26 +360,31 @@
                         <div id="result" style="display: block">
                         </div>
                         <form id="contact-form" onsubmit="return false">
-                            {#role="form"  method="post" action="{{ url('robert_send_message')}}"#}
                             <div class="user">
-                                <input type="text" name="full_name" placeholder="Name" required/>
+                                <input type="text" name="full_name"
+                                       placeholder="{% trans %}homepage.contact.name{% endtrans %}" required/>
                                 <i class="fa fa-user" aria-hidden="true"></i></div>
                             <div class="user">
-                                <input type="text" name="email_address" placeholder="Email" required/>
+                                <input type="text" name="email_address"
+                                       placeholder="{% trans %}homepage.contact.email{% endtrans %}" required/>
                                 <i class="fa fa-envelope" aria-hidden="true"></i></div>
-                            <textarea name="apply_message" placeholder="Message here"></textarea>
-                            <input id="btn-submit" type="submit" value="Submit Now"/>
+                            <textarea name="apply_message"
+                                      placeholder="{% trans %}homepage.contact.message{% endtrans %}"></textarea>
+                            <input id="btn-submit" type="submit"
+                                   value="{% trans %}homepage.contact.submit{% endtrans %}"/>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-8 col-xs-12 contact_info">
                     <div class="animate bounceInRight">
-                        <h3> Get In Touch</h3>
+                        <h3>{% trans %}homepage.get_in_touch{% endtrans %}</h3>
                         <div class="contact_sec">
                             <ul>
                                 <li><i class="fa fa-phone"
-                                       aria-hidden="true"></i><span>Phone: +61 (0)450 981 126</span></li>
-                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email: <a
+                                       aria-hidden="true"></i><span>{% trans %}homepage.contact.phone{% endtrans %}: +61 (0)450 981 126</span>
+                                </li>
+                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>{% trans %}
+                                        homepage.contact.email{% endtrans %}: <a
                                                 href="mailto:info@renxubo.me?Subject=Hello%20Ren Xubo" target="_top"> info@renxubo.me</a></span>
                                 </li>
                             </ul>
@@ -383,7 +404,7 @@
                 </div>
                 <div class="col-xs-12 footer text-center">
                     <div class="animate fadeInLeft">
-                        <p> &copy; 2017 Robert Ren, All rights reserved. </p>
+                        <p> &copy; 2017 Robert Ren. </p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,47 @@
+# Homepage Translation
+homepage:
+  home: 首页
+  firstname: 任
+  lastname: 旭博
+  role: PHP开发者
+  contact_me: 联系方式
+  about_me: 关于我
+  my_career_time_line: 我的职业时间线
+  career_content: 逆水行舟，不进则退
+  title:
+    1: 网站设计
+    2: 信息技术硕士
+    3: PHP网站工程师
+  company:
+    1: 北京日立北工大信息系統有限公司
+    2: 蒙纳士大学
+    3: IPX.net
+  job_description:
+    1: 负责北京语言大学的Digi-Class系统的设计，完成相关功能的升级与解决方案
+    2: 主攻网站应用开发以及网络计算，获得2013年和2014年的信息技术学院的国际奖学金
+    3: 开发IPX.net网站，从需求分析到设计阶段，再到代码开发，测试，完成网站的完整开发
+  about_me_content: 我是一名拥有两年经验PHP网站工程师。工作使我更加严谨并且激发我的创造力，旅行与运动使我的生活更加丰富多彩。我很喜欢在工作和旅行中结交朋友
+  skills_title:
+    1: Symfony 框架
+    2: HTML, CSS & JQuery
+    3: Github
+  skills_description:
+    1: 使用PHP Symfony 框架从后台到前台搭建网站
+    2: 利用前沿的前端技术打造更快更好的响应式网站
+    3: 利用分布式的版本控制工具更好的与其它开发者共同开发
+  my_life: 我的生活
+  my_life_menu:
+    all: 所有
+    basketball: 篮球
+    badminton: 羽毛球
+    photography: 旅行与摄影
+    game: 游戏
+  want_to_learn_me: 想要更多的了解我吗？
+  get_in_touch: 保持联系
+  contact:
+    subline: 联系我并给我留条信息吧
+    name: 姓名
+    email: 邮箱
+    message: 在这留点儿信息
+    submit: 提交
+    phone: 联系电话
