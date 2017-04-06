@@ -130,9 +130,9 @@ jQuery(function ($) {
                 success: function (response) {
                     output = '<div class="success"><p style="text-align:left; color:#fff;">' + response.msg + '</p></div>';
                     //reset values in all input fields
-                    $('#contact-form input').val('');
-                    $('#contact-form textarea').val('');
-                    $('#btn-submit').val('Submit Now');
+                    $('#full_name').val('');
+                    $('#email_address').val('');
+                    $('#apply_message').val('');
                     $("#result").hide().html(output).slideDown();
                 },
                 error: function (response) {

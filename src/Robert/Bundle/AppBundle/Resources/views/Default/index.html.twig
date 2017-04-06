@@ -361,14 +361,14 @@
                         </div>
                         <form id="contact-form" onsubmit="return false">
                             <div class="user">
-                                <input type="text" name="full_name"
+                                <input id="full_name" type="text" name="full_name"
                                        placeholder="{% trans %}homepage.contact.name{% endtrans %}" required/>
                                 <i class="fa fa-user" aria-hidden="true"></i></div>
                             <div class="user">
-                                <input type="text" name="email_address"
+                                <input id="email_address" type="text" name="email_address"
                                        placeholder="{% trans %}homepage.contact.email{% endtrans %}" required/>
                                 <i class="fa fa-envelope" aria-hidden="true"></i></div>
-                            <textarea name="apply_message"
+                            <textarea id="apply_message" name="apply_message"
                                       placeholder="{% trans %}homepage.contact.message{% endtrans %}"></textarea>
                             <input id="btn-submit" type="submit"
                                    value="{% trans %}homepage.contact.submit{% endtrans %}"/>

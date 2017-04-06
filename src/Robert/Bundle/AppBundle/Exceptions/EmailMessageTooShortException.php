@@ -12,6 +12,6 @@ class EmailMessageTooShortException extends \Exception
 {
     public function __construct()
     {
-        parent::__construct("Too short message! Please enter something.");
+        parent::__construct("invalid_message");
     }
 }

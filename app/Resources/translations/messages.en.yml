@@ -1,4 +1,8 @@
 # Homepage Translation
+invalid_email: Please enter a valid email!
+invalid_message: Too short message! Please enter something.
+pre_msg: Hi,
+sub_msg: , Thank you for contacting us.
 homepage:
   home: Home
   firstname: Robert
@@ -41,7 +45,7 @@ homepage:
     badminton_chenlong: Chen Long
     badminton_chenlong_desc: My best badminton player, the next hope of China's badminton.
     photography: Travel&Photography
-    photography_guiyang: Huangguoshu Waterfall_
+    photography_guiyang: Huangguoshu Waterfall
     photography_guiyang_desc: Travel to Guiyang and enjoy the trip in there.
     photography_lake_tyrrell: Lake Tyrrell
     photography_lake_tyrrell_desc: Sunset show in Lake Tyrrell

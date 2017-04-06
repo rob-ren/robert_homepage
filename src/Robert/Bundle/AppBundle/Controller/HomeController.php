@@ -5,6 +5,7 @@ namespace Robert\Bundle\AppBundle\Controller;
 use Robert\Bundle\AppBundle\Exceptions\EmailFormatErrorException;
 use Robert\Bundle\AppBundle\Exceptions\EmailMessageTooShortException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Translation\Translator;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class HomeController extends Controller
@@ -38,6 +39,7 @@ class HomeController extends Controller
         $full_name = $this->get('Request')->get('full_name') ? $this->get('Request')->get('full_name') : null;
         $email_address = $this->get('Request')->get('email_address') ? $this->get('Request')->get('email_address') : null;
         $apply_message = $this->get('Request')->get('apply_message') ? $this->get('Request')->get('apply_message') : null;
+        $translator = $this->get('translator');
         try {
             // verify email is valid
             if (!$this->isValidEmail($email_address)) {
@@ -60,8 +62,9 @@ class HomeController extends Controller
             // send email
             $this->get('mailer')->send($message);
         } catch (\Exception $e) {
-            return new JsonResponse(array('msg' => $e->getMessage()));
+            return new JsonResponse(array('msg' => $translator->trans($e->getMessage())));
         }
-        return new JsonResponse(array('msg' => "Hi " . $full_name . ", Thank you for contacting us."));
+        $success_msg = $translator->trans('pre_msg') . $full_name . $translator->trans('sub_msg');
+        return new JsonResponse(array('msg' => $success_msg));
     }
 }

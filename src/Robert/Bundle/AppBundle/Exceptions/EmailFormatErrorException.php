@@ -12,6 +12,6 @@ class EmailFormatErrorException extends \Exception
 {
     public function __construct()
     {
-        parent::__construct("Please enter a valid email! ");
+        parent::__construct("invalid_email");
     }
 }
