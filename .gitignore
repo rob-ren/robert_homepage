@@ -47,3 +47,8 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
