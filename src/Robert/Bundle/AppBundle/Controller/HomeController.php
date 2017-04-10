@@ -40,6 +40,7 @@ class HomeController extends Controller
         $email_address = $this->get('Request')->get('email_address') ? $this->get('Request')->get('email_address') : null;
         $apply_message = $this->get('Request')->get('apply_message') ? $this->get('Request')->get('apply_message') : null;
         $translator = $this->get('translator');
+        $receiver = $this->getParameter('mailer_user');
         try {
             // verify email is valid
             if (!$this->isValidEmail($email_address)) {
@@ -53,8 +54,8 @@ class HomeController extends Controller
             //create email template and send email
             $message = \Swift_Message::newInstance()
                 ->setSubject("New Contact Information from " . $full_name . " !")
-                ->setFrom($email_address)// my email info
-                ->setTo("robertrennn@gmail.com")// my email info
+                ->setFrom($receiver)// my email info
+                ->setTo($receiver)// my email info
                 ->setBody("name: " . $full_name
                     . "\r\n email: " . $email_address
                     . "\r\n message: " . $apply_message
