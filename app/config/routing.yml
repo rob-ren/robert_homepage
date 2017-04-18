@@ -1,3 +1,6 @@
 robert_app:
     resource: "@RobertAppBundle/Resources/config/routing.yml"
     prefix:   /
+
+database:
+    resource: "@DatabaseBundle/Resources/config/routing.yml"

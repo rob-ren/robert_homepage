@@ -1,0 +1,61 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: robert
+ * Date: 18/4/17
+ * Time: 11:49 AM
+ */
+namespace Robert\Bundle\DatabaseBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="robert_user")
+ */
+class User
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=100, unique=true, nullable=false)
+     */
+    protected $email;
+
+    /**
+     * @ORM\Column(type="string", length=100, unique=true, nullable=false)
+     */
+    protected $username;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     */
+    protected $password;
+
+    /**
+     * @ORM\Column(type="smallint")
+     */
+    protected $status = false;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $salt;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $timestamp;
+
+    /**
+     */
+    public function __construct()
+    {
+        $this->timestamp = new \DateTime ();
+    }
+}
