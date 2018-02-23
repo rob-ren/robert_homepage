@@ -1,69 +1,60 @@
-# Homepage Translation
-invalid_email: Please enter a valid email!
-invalid_message: Too short message! Please enter something.
-pre_msg: Hi,
-sub_msg: , Thank you for contacting us.
-homepage:
-  home: Home
-  firstname: Robert
-  lastname: Ren
-  role: PHP Web Developer
-  contact_me: Contact Me
-  about_me: About Me
-  my_career_time_line: My Career Time Line
-  career_content: Be not afraid of going slowly, Be afraid of standing still.
-  title:
-    1: Web Design
-    2: Master of Information Technology
-    3: PHP Web Developer
-  company:
-    1: Hitachi Information Systems
-    2: Monash University
-    3: IPX.net
-  job_description:
-    1: Focused on Digi-Class system applied in Beijing Language and Culture University, completed the function upgrade of Digi-Class system
-    2: Major in Internet and Web Application Development and Network Computing and Awarded the Faculty of IT International Merit Scholarship in 2013 and 2014
-    3: Develop a website from analysis and design stages, through coding, implementation and testing to evaluation
-  about_me_content: I'm a php web developer with 2 years of professional experience. Work makes me more rigorous and creative, Sports and Travel makes my life colorful. I'd like to make frineds through working and travel
-  skills_title:
-    1: Symfony Framework
-    2: HTML, CSS & JQuery
-    3: Github
-  skills_description:
-    1: Using PHP Symfony framework to establish the websites from backend to frontend
-    2: Latest fronted technologies for faster and better responsive websites
-    3: Working cooperative with teammates by distributed version control tools
-  my_life: My Life
-  my_life_menu:
-    all: All
-    basketball: Basketball
-    basketball_desc: Dead Heart of the Houston Rockets
-    basketball_playground: My Basketball Playground
-    basketball_playground_desc: There was many sweat and happiness.
-    badminton: Badminton
-    badminton_desc: Still NOOB, play badminton in weekends !
-    badminton_chenlong: Chen Long
-    badminton_chenlong_desc: My best badminton player, the next hope of China's badminton.
-    photography: Travel&Photography
-    photography_guiyang: Huangguoshu Waterfall
-    photography_guiyang_desc: Travel to Guiyang and enjoy the trip in there.
-    photography_lake_tyrrell: Lake Tyrrell
-    photography_lake_tyrrell_desc: Sunset show in Lake Tyrrell
-    photography_national_park: Redwood Forest
-    photography_national_park_desc: Walking through Redwood trees which planted in the East Warburton.
-    game: Game
-    game_pokemon: Pokemon Go!
-    game_pokemon_desc: First time take up the gym!
-    game_vampire: One Night Ultimate Vampire
-    game_vampire_desc: Gremmmmlin, open your eyes!
-    game_wow: World of Warcaft
-    game_wow_desc: Arouse the anger of the elements - The Ehancement of Shaman
-  want_to_learn_me: Do you want to learn more about me?
-  get_in_touch: Get In Touch
-  contact:
-    subline: Please feel free to contact me and leave message!
-    name: Name
-    email: Email
-    message: Message here
-    submit: Submit Now
-    phone: Phone
+invalid_email: 'Please enter a valid email!'
+invalid_message: 'Too short message! Please enter something.'
+pre_msg: 'Hi,'
+sub_msg: ', Thank you for contacting us.'
+homepage.home: Home
+homepage.firstname: Robert
+homepage.lastname: Ren
+homepage.role: 'PHP Web Developer'
+homepage.contact_me: 'Contact Me'
+homepage.about_me: 'About Me'
+homepage.my_career_time_line: 'My Career Time Line'
+homepage.career_content: 'Be not afraid of going slowly, Be afraid of standing still.'
+homepage.title.1: 'PHP Symfony Developer'
+homepage.title.2: 'Full Stack PHP Developer'
+homepage.title.3: 'Consultant PHP Developer'
+homepage.company.1: IPX.net
+homepage.company.2: 'Nowboarding Digital Agency'
+homepage.company.3: Appscore
+homepage.job_description.1: 'Develop a website from analysis and design stages, through coding, implementation and testing to evaluation'
+homepage.job_description.2: 'Develope Viewbid.com.au website and agent portal from back-end to front-end.'
+homepage.job_description.3: 'Integration of user-facing elements developed by the mobile developers with server side logic'
+homepage.about_me_content: 'I''m a php web developer with 3 years of professional experience. Work makes me more rigorous and creative, Sports and Travel makes my life colorful. I''d like to make frineds through working and travel'
+homepage.skills_title.1: 'Symfony Framework & Codeigniter Framework'
+homepage.skills_title.2: 'HTML, CSS & JQuery'
+homepage.skills_title.3: Github
+homepage.skills_description.1: 'Using PHP Symfony/Codeigniter framework to establish the websites from backend to frontend'
+homepage.skills_description.2: 'Latest fronted technologies for faster and better responsive websites'
+homepage.skills_description.3: 'Working cooperative with teammates by distributed version control tools'
+homepage.my_life: 'My Life'
+homepage.my_life_menu.all: All
+homepage.my_life_menu.basketball: Basketball
+homepage.my_life_menu.basketball_desc: 'Dead Heart of the Houston Rockets'
+homepage.my_life_menu.basketball_playground: 'My Basketball Playground'
+homepage.my_life_menu.basketball_playground_desc: 'There was many sweat and happiness.'
+homepage.my_life_menu.badminton: Badminton
+homepage.my_life_menu.badminton_desc: 'Still NOOB, play badminton in weekends !'
+homepage.my_life_menu.badminton_chenlong: 'Chen Long'
+homepage.my_life_menu.badminton_chenlong_desc: 'My best badminton player, the next hope of China''s badminton.'
+homepage.my_life_menu.photography: 'Travel&Photography'
+homepage.my_life_menu.photography_guiyang: 'Huangguoshu Waterfall'
+homepage.my_life_menu.photography_guiyang_desc: 'Travel to Guiyang and enjoy the trip in there.'
+homepage.my_life_menu.photography_lake_tyrrell: 'Lake Tyrrell'
+homepage.my_life_menu.photography_lake_tyrrell_desc: 'Sunset show in Lake Tyrrell'
+homepage.my_life_menu.photography_national_park: 'Redwood Forest'
+homepage.my_life_menu.photography_national_park_desc: 'Walking through Redwood trees which planted in the East Warburton.'
+homepage.my_life_menu.game: Game
+homepage.my_life_menu.game_pokemon: 'Pokemon Go!'
+homepage.my_life_menu.game_pokemon_desc: 'First time take up the gym!'
+homepage.my_life_menu.game_vampire: 'One Night Ultimate Vampire'
+homepage.my_life_menu.game_vampire_desc: 'Gremmmmlin, open your eyes!'
+homepage.my_life_menu.game_wow: 'World of Warcaft'
+homepage.my_life_menu.game_wow_desc: 'Arouse the anger of the elements - The Ehancement of Shaman'
+homepage.want_to_learn_me: 'Do you want to learn more about me?'
+homepage.get_in_touch: 'Get In Touch'
+homepage.contact.subline: 'Please feel free to contact me and leave message!'
+homepage.contact.name: Name
+homepage.contact.email: Email
+homepage.contact.message: 'Message here'
+homepage.contact.submit: 'Submit Now'
+homepage.contact.phone: Phone

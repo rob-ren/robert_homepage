@@ -38,6 +38,11 @@ class User
     protected $password;
 
     /**
+     * @ORM\Column(type="string", length=100, unique=true, nullable=false)
+     */
+    protected $name;
+
+    /**
      * @ORM\Column(type="smallint")
      */
     protected $status = false;

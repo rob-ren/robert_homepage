@@ -1,69 +1,60 @@
-# Homepage Translation
-invalid_email: 请输入有效的电子邮箱地址
+invalid_email: '请输入有效的电子邮箱地址'
 invalid_message: 消息太短啦！请多写点儿！
-pre_msg: 你好
-sub_msg: , 谢谢你联系我。
-homepage:
-  home: 首页
-  firstname: 任
-  lastname: 旭博
-  role: PHP开发者
-  contact_me: 联系方式
-  about_me: 关于我
-  my_career_time_line: 我的职业时间线
-  career_content: 逆水行舟，不进则退
-  title:
-    1: 网站设计
-    2: 信息技术硕士
-    3: PHP网站工程师
-  company:
-    1: 北京日立北工大信息系統有限公司
-    2: 蒙纳士大学
-    3: IPX.net
-  job_description:
-    1: 负责北京语言大学的Digi-Class系统的设计，完成相关功能的升级与解决方案
-    2: 主攻网站应用开发以及网络计算，获得2013年和2014年的信息技术学院的国际奖学金
-    3: 开发IPX.net网站，从需求分析到设计阶段，再到代码开发，测试，完成网站的完整开发
-  about_me_content: 我是一名拥有两年经验PHP网站工程师。工作使我更加严谨并且激发我的创造力，旅行与运动使我的生活更加丰富多彩。我很喜欢在工作和旅行中结交朋友。
-  skills_title:
-    1: Symfony 框架
-    2: HTML, CSS & JQuery
-    3: Github
-  skills_description:
-    1: 使用PHP Symfony 框架从后台到前台搭建网站
-    2: 利用前沿的前端技术打造更快更好的响应式网站
-    3: 利用分布式的版本控制工具更好的与其它开发者共同开发
-  my_life: 我的生活
-  my_life_menu:
-      all: 所有
-      basketball: 篮球
-      basketball_desc: 休斯顿火箭的死忠粉
-      basketball_playground: 曾经的篮球场
-      basketball_playground_desc: 大学四年挥撒了无数汗水与欢乐
-      badminton: 羽毛球
-      badminton_desc: 目前还很菜鸟，每周末练习中！
-      badminton_chenlong: 陈龙
-      badminton_chenlong_desc: 目前最喜欢的羽毛球手，中国未来羽球的希望啊
-      photography: 旅行&摄影
-      photography_guiyang: 黄果树瀑布
-      photography_guiyang_desc: 在贵阳旅行时去过的地方，很享受，很舒服
-      photography_lake_tyrrell: 天空之境
-      photography_lake_tyrrell_desc: 日落时分的表演
-      photography_national_park: 红树森林
-      photography_national_park_desc: 穿梭在位于沃伯顿东边的红树森林中
-      game: 游戏
-      game_pokemon: Pokemon Go!
-      game_pokemon_desc: 第一次占领道馆
-      game_vampire: 一夜终极吸血鬼
-      game_vampire_desc: 小精灵....睁开你的眼！
-      game_wow: 魔兽世界
-      game_wow_desc: 唤醒元素的愤怒吧！- 我永远的增强萨
-  want_to_learn_me: 想要更多的了解我吗？
-  get_in_touch: 保持联系
-  contact:
-    subline: 联系我并给我留条信息吧
-    name: 姓名
-    email: 邮箱
-    message: 在这留点儿信息
-    submit: 提交
-    phone: 联系电话
+pre_msg: '你好'
+sub_msg: ', 谢谢你联系我。'
+homepage.home: 首页
+homepage.firstname: 任
+homepage.lastname: 旭博
+homepage.role: 'PHP开发者'
+homepage.contact_me: 联系方式
+homepage.about_me: '关于我'
+homepage.my_career_time_line: 我的职业时间线
+homepage.career_content: 逆水行舟，不进则退
+homepage.title.1: PHP网站工程师
+homepage.title.2: 'PHP全栈工程师'
+homepage.title.3: PHP方案解决顾问
+homepage.company.1: IPX.net
+homepage.company.2: 'Nowboarding Digital Agency'
+homepage.company.3: Appscore
+homepage.job_description.1: '开发IPX.net网站，从需求分析到设计阶段，再到代码开发，测试，完成网站的完整开发'
+homepage.job_description.2: '开发viewbid.com.au 网站, 从后台服务到前台功能实现进行完整的开发'
+homepage.job_description.3: '整合用户体验并且为移动端提供API服务,优化系统功效,并提高系统运行速度'
+homepage.about_me_content: '我是一名拥有三年经验PHP网站工程师。工作使我更加严谨并且激发我的创造力，旅行与运动使我的生活更加丰富多彩。我很喜欢在工作和旅行中结交朋友。'
+homepage.skills_title.1: 'Symfony/Codeigniter 框架'
+homepage.skills_title.2: 'HTML, CSS & JQuery'
+homepage.skills_title.3: Github
+homepage.skills_description.1: '使用PHP Symfony/Codeigniter 框架从后台到前台搭建网站'
+homepage.skills_description.2: '利用前沿的前端技术打造更快更好的响应式网站'
+homepage.skills_description.3: '利用分布式的版本控制工具更好的与其它开发者共同开发'
+homepage.my_life: 我的生活
+homepage.my_life_menu.all: 所有
+homepage.my_life_menu.basketball: 篮球
+homepage.my_life_menu.basketball_desc: '休斯顿火箭的死忠粉'
+homepage.my_life_menu.basketball_playground: 曾经的篮球场
+homepage.my_life_menu.basketball_playground_desc: '大学四年挥撒了无数汗水与欢乐'
+homepage.my_life_menu.badminton: 羽毛球
+homepage.my_life_menu.badminton_desc: '目前还很菜鸟，每周末练习中！'
+homepage.my_life_menu.badminton_chenlong: 陈龙
+homepage.my_life_menu.badminton_chenlong_desc: 目前最喜欢的羽毛球手，中国未来羽球的希望啊
+homepage.my_life_menu.photography: '旅行&摄影'
+homepage.my_life_menu.photography_guiyang: '黄果树瀑布'
+homepage.my_life_menu.photography_guiyang_desc: '在贵阳旅行时去过的地方，很享受，很舒服'
+homepage.my_life_menu.photography_lake_tyrrell: 天空之境
+homepage.my_life_menu.photography_lake_tyrrell_desc: 日落时分的表演
+homepage.my_life_menu.photography_national_park: '红树森林'
+homepage.my_life_menu.photography_national_park_desc: '穿梭在位于沃伯顿东边的红树森林中'
+homepage.my_life_menu.game: 游戏
+homepage.my_life_menu.game_pokemon: 'Pokemon Go!'
+homepage.my_life_menu.game_pokemon_desc: '第一次占领道馆'
+homepage.my_life_menu.game_vampire: 一夜终极吸血鬼
+homepage.my_life_menu.game_vampire_desc: '小精灵....睁开你的眼！'
+homepage.my_life_menu.game_wow: '魔兽世界'
+homepage.my_life_menu.game_wow_desc: '唤醒元素的愤怒吧！- 我永远的增强萨'
+homepage.want_to_learn_me: 想要更多的了解我吗？
+homepage.get_in_touch: 保持联系
+homepage.contact.subline: 联系我并给我留条信息吧
+homepage.contact.name: 姓名
+homepage.contact.email: 邮箱
+homepage.contact.message: 在这留点儿信息
+homepage.contact.submit: 提交
+homepage.contact.phone: 联系电话

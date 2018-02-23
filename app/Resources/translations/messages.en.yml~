@@ -1,0 +1,69 @@
+# Homepage Translation
+invalid_email: Please enter a valid email!
+invalid_message: Too short message! Please enter something.
+pre_msg: Hi,
+sub_msg: , Thank you for contacting us.
+homepage:
+  home: Home
+  firstname: Robert
+  lastname: Ren
+  role: PHP Web Developer
+  contact_me: Contact Me
+  about_me: About Me
+  my_career_time_line: My Career Time Line
+  career_content: Be not afraid of going slowly, Be afraid of standing still.
+  title:
+    1: PHP Symfony Developer
+    2: Full Stack PHP Developer
+    3: Consultant PHP Developer
+  company:
+    1: IPX.net
+    2: Nowboarding Digital Agency
+    3: Appscore
+  job_description:
+    1: Develop a website from analysis and design stages, through coding, implementation and testing to evaluation
+    2: Develope Viewbid.com.au website and agent portal from back-end to front-end.
+    3: Integration of user-facing elements developed by the mobile developers with server side logic
+  about_me_content: I'm a php web developer with 3 years of professional experience. Work makes me more rigorous and creative, Sports and Travel makes my life colorful. I'd like to make frineds through working and travel
+  skills_title:
+    1: Symfony Framework & Codeigniter Framework
+    2: HTML, CSS & JQuery
+    3: Github
+  skills_description:
+    1: Using PHP Symfony/Codeigniter framework to establish the websites from backend to frontend
+    2: Latest fronted technologies for faster and better responsive websites
+    3: Working cooperative with teammates by distributed version control tools
+  my_life: My Life
+  my_life_menu:
+    all: All
+    basketball: Basketball
+    basketball_desc: Dead Heart of the Houston Rockets
+    basketball_playground: My Basketball Playground
+    basketball_playground_desc: There was many sweat and happiness.
+    badminton: Badminton
+    badminton_desc: Still NOOB, play badminton in weekends !
+    badminton_chenlong: Chen Long
+    badminton_chenlong_desc: My best badminton player, the next hope of China's badminton.
+    photography: Travel&Photography
+    photography_guiyang: Huangguoshu Waterfall
+    photography_guiyang_desc: Travel to Guiyang and enjoy the trip in there.
+    photography_lake_tyrrell: Lake Tyrrell
+    photography_lake_tyrrell_desc: Sunset show in Lake Tyrrell
+    photography_national_park: Redwood Forest
+    photography_national_park_desc: Walking through Redwood trees which planted in the East Warburton.
+    game: Game
+    game_pokemon: Pokemon Go!
+    game_pokemon_desc: First time take up the gym!
+    game_vampire: One Night Ultimate Vampire
+    game_vampire_desc: Gremmmmlin, open your eyes!
+    game_wow: World of Warcaft
+    game_wow_desc: Arouse the anger of the elements - The Ehancement of Shaman
+  want_to_learn_me: Do you want to learn more about me?
+  get_in_touch: Get In Touch
+  contact:
+    subline: Please feel free to contact me and leave message!
+    name: Name
+    email: Email
+    message: Message here
+    submit: Submit Now
+    phone: Phone
